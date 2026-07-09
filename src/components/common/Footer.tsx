@@ -1,8 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { FiPhone, FiInstagram, FiMail, FiMapPin } from 'react-icons/fi';
+import { FiPhone, FiInstagram } from 'react-icons/fi';
 import { BUSINESS_INFO } from '@/utils/constants';
 
 const Footer = () => {
@@ -91,8 +90,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
             <p>© {currentYear} S.P Tailors. All Rights Reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-luxury-gold transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-luxury-gold transition-colors">Terms of Service</a>
+              <a href="#privacy" className="hover:text-luxury-gold transition-colors">Privacy Policy</a>
+              <a href="#terms" className="hover:text-luxury-gold transition-colors">Terms of Service</a>
             </div>
           </div>
         </div>
