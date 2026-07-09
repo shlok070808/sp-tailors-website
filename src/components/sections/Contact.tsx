@@ -1,8 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { fadeInUp } from '@/utils/animations';
-import { FiPhone, FiMail, FiMapPin, FiInstagram } from 'react-icons/fi';
+import { FiPhone, FiInstagram, FiMapPin } from 'react-icons/fi';
 import { BUSINESS_INFO } from '@/utils/constants';
 
 const Contact = () => {
@@ -45,7 +44,13 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 px-4 bg-black">
       <div className="max-w-6xl mx-auto">
-        <motion.div {...fadeInUp} className="text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
           <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-4">Get In <span className="text-luxury-gold">Touch</span></h2>
           <p className="text-gray-400">We'd love to hear from you</p>
           <div className="h-1 w-20 bg-luxury-gold mx-auto mt-4"></div>
