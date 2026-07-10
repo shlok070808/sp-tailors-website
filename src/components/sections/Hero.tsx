@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { fadeInUp, slideInUp } from '@/utils/animations';
+import { slideInUp } from '@/utils/animations';
 
 const Hero = () => {
   return (
